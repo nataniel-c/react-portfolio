@@ -1,5 +1,4 @@
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -8,7 +7,7 @@ import Error from './pages/Error';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
+import Contact from './components/Contact';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([

@@ -1,14 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
-import About from './components/About';
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navigation() {
+  const currentPage = useLocation().pathname;
+
   return (
-    <Router>
-      <nav>
         <section
           style={{
             display: 'flex',
@@ -18,29 +14,29 @@ function Navigation() {
             justifyContent: 'flex-start',
           }}
         >
-        <ul>
-          <li>
-            <Link to="/">About me</Link>
+        <ul className="nav nav-tabs">
+          <li className="nav-item">
+            <Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
+              About me
+            </Link>
           </li>
-          <li>
-            <Link to="/portfolio">Portfolio</Link>
+          <li className="nav-item">
+            <Link to="/portfolio" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
+              Portfolio
+            </Link>
           </li>
-          <li>
-            <Link to="/contact">Contact</Link>
+          <li className="nav-item">
+            <Link to="/contact" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
+              Contact
+            </Link>
           </li>
-          <li>
-            <Link to="/resume">Resume</Link>
+          <li className="nav-item">
+            <Link to="/resume" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
+              Resume
+            </Link>
           </li>
         </ul>
         </section>
-      </nav>
-      <Switch>
-        <Route exact path="/" component={About} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={Resume} />
-      </Switch>
-    </Router>
   )
 }
 

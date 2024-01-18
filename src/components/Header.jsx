@@ -1,6 +1,6 @@
 // Import React Router Link component for internal hyperlinks
 import { Link } from 'react-router-dom';
-import { Navigation } from './components/Navigation'
+import Navigation from '../components/Navigation'
 
 const Header = () => {
   return (

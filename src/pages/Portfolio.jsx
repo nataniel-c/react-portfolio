@@ -1,5 +1,5 @@
 import projects from '../projects'
-import Project from './components/Project'
+import Project from '../components/Project'
 
 function Portfolio() {
   return (
