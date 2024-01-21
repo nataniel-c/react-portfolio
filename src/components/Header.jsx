@@ -4,14 +4,16 @@ import Navigation from '../components/Navigation'
 
 const Header = () => {
   return (
-    <header className="bg-info text-dark mb-4 py-3 display-flex align-center">
-      <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
+    <header>
+      <div className="top">
         {/* Use Link component to create a link that returns to the homepage on click */}
-        <Link className="text-dark" to="/">
-          <h1 className="m-0" style={{ fontSize: '3rem' }}>
+        <Link to="/">
+          <h1 className="myname" style={{ fontSize: '3rem' }}>
             Nataniel Carrasquillo
           </h1>
         </Link>
+      </div>
+      <div className="page">
         <Navigation />
       </div>
     </header>

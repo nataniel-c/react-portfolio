@@ -1,43 +1,28 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Tab, Tabs, TabsList, TabPanel } from '@mui/base'
+import About from '../pages/About';
+import Resume from '../pages/Resume';
+import Portfolio from '../pages/Portfolio';
+import Contact from '../pages/Contact';
+
 
 function Navigation() {
-  const currentPage = useLocation().pathname;
 
   return (
-        <section
-          style={{
-            display: 'flex',
-            fontFamily: 'helvetica',
-            flexDirection: 'row',
-            alignItems: 'flex-start',
-            justifyContent: 'flex-start',
-          }}
-        >
-        <ul className="nav nav-tabs">
-          <li className="nav-item">
-            <Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
-              About me
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/portfolio" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
-              Portfolio
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
-              Contact
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/resume" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
-              Resume
-            </Link>
-          </li>
-        </ul>
-        </section>
+        <Tabs defaultValue='/'>
+          <TabsList className="CustomTabsList">
+            <Tab className='CustomTab' value='/' to='/'>About me</Tab>
+            <Tab className='CustomTab' value='/portfolio' to='/portfolio'>Portfolio</Tab>
+            <Tab className='CustomTab' value='/contact' to='/contact'>Contact</Tab>
+            <Tab className='CustomTab' value='/resume' to='/resume'>Resume</Tab>
+          </TabsList>
+          <TabPanel className='CustomTabPanel' value='/'><div><About /></div></TabPanel>
+          <TabPanel className='CustomTabPanel' value='/portfolio'><div><Portfolio /></div></TabPanel>
+          <TabPanel className='CustomTabPanel' value='/contact'><div><Contact /></div></TabPanel>
+          <TabPanel className='CustomTabPanel' value='/resume'><div><Resume /></div></TabPanel>   
+          </Tabs> 
   )
 }
+
 
 export default Navigation;

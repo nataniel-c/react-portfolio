@@ -10,6 +10,16 @@ const projects = [
     },
     {
         id: 2,
+        name: 'Tech Blog',
+        weblink: 'https://nataniel-c-tech-blog-e14d11d574ae.herokuapp.com/',
+        githublink: 'https://github.com/nataniel-c/tech-blog',
+        thumbnail: './src/assets/images/techblog.png',
+        alttext: 'techblog',
+        description: 'CMS-style blog site similar to a Wordpress site, where users can publish their blog posts and comment on other users’ posts as well. Users can create an account and login using their credentials. Data is stored in a datbase using mysql.'
+    
+    },
+    {
+        id: 3,
         name: 'Vibeify',
         weblink: 'https://nataniel-c.github.io/vibeify/',
         githublink: 'https://github.com/nataniel-c/vibeify',
@@ -18,11 +28,11 @@ const projects = [
         description: 'Upload an image using a weblink and get a song from Spotify that matches the "vibe" of the image'
     },
     {
-        id: 3,
+        id: 4,
         name: 'DnD Builder',
         weblink: 'https://dnd-builder-8e53886511db.herokuapp.com/',
         githublink: 'https://github.com/InternetEthan/dnd-builder',
-        thumbnail: './src/assets/images/vibeify.png',
+        thumbnail: './src/assets/images/dnd-builder.png',
         alttext: 'dnd builder',
         description: 'Interactive DnD character creator with user database'
     }

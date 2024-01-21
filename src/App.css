@@ -4,10 +4,16 @@
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
+  --bg-color: rgb(9, 4, 20);
+  --tab-bg-color: rgb(18, 99, 99);
+  --tab-hover-color: rgb(18, 37, 37);
+  --tab-click-color: rgb(255, 187, 0);
+  --tab-shadow-color: rgb(138, 0, 60);
 }
 
 body {
-  background-color: rgb(9, 4, 20);
+  background-color: var(--bg-color);
+  min-width: 500px;
 }
 
 h1 {
@@ -24,6 +30,8 @@ h3 {
 
 .contact-form {
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-input {
@@ -53,19 +61,25 @@ h3 {
 
 .project-container {
   display: flex;
-  flex-direction: row;
-  position: relative;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 10px;
+  justify-content: space-evenly;
+  columns: 400px 3;
 }
-
-.project-row {
+/* 
+.project {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4px auto;
-  color: #fff;
-  padding: 16px;
+  align-items: stretch;
   border-radius: 5px;
-  width: 90%;
+  max-width: 150em;
+  max-height: 150em;
+  background-color: #237a94;
+} */
+
+.cardbg {
+  background-color: #920000;
 }
 
 .low {
@@ -121,26 +135,11 @@ h3 {
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
+.logo:hover, Link:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
 
 .card {
@@ -149,4 +148,96 @@ h3 {
 
 .read-the-docs {
   color: #888;
+}
+
+.CustomTabsList {
+  min-width: 500px;
+  background-color: var(--tab-bg-color);
+  border-radius: 12px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+  box-shadow: 0px 4px 6px var(--tab-shadow-color);
+}
+
+.CustomTab {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+  background-color: transparent;
+  width: 100%;
+  line-height: 1.5;
+  padding: 8px 12px;
+  margin: 6px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.CustomTab:hover {
+  background-color: var(--tab-hover-color);
+}
+
+.CustomTab:focus {
+  color: #fff;
+  outline: 3px solid var(--tab-click-color);
+}
+
+.CustomTabPanel {
+  width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.875rem;
+}
+
+li {
+  align-self: flex-start;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  justify-content: center;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 5%;
+}
+
+.body-font {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  align-items: center;
+  background: var(--tab-bg-color);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.myname {
+  font-family: 'OCR A Std';
+}
+
+.avatar {
+  box-shadow: 10px 10px 10px var(--tab-shadow-color)
 }

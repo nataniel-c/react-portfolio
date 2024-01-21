@@ -4,9 +4,7 @@ function Contact() {
   const [username, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  this.state = {
-    warning: ''
-  }
+  const [warning, setWarning] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,19 +17,19 @@ function Contact() {
     // check if a name was given
     if (!username) {
       return (
-        this.setState({ warning: 'Name is required'})
+        setWarning('Name is required')
       )
     }
     // check if a valid email was given
     if (!validateEmail(email)) {
       return (
-        this.setState({ warning: 'Email is invalid'})
+        setWarning('Email is invalid')
       )
     }
     // check if a message was given
     if (!message) {
       return (
-        this.setState({ warning: 'Name is required'})
+        setWarning('Name is required')
       )
     }
     if (username && email && message) {
@@ -50,7 +48,7 @@ function Contact() {
         <li>Email: nataniel-carras@hotmail.com</li>
       </ul>
       <label>Send me a message:</label>
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={handleSubmit}>
         <label>Name:</label>
         <input
           type="text"
@@ -78,7 +76,7 @@ function Contact() {
         <button type="submit" className="submit-button">Submit</button>
       </form>
       <div>
-        {this.state.warning}
+        {warning}
       </div>
     </div>
   )
