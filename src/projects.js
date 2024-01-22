@@ -1,15 +1,10 @@
-import horiseonthumbnail from './assets/images/horiseon-home-page.jpg'
-import techblogthumbnail from './assets/images/techblog.jpg'
-import vibeifythumbnail from './assets/images/vibeify.jpg'
-import dndbuilderthumbnail from './assets/images/dnd-builder.jpg'
-
 const projects = [
     {
         id: 1,
         name: 'Horiseon Webpage',
         weblink: 'https://nataniel-c.github.io/module-01-challenge/',
         githublink: 'https://github.com/nataniel-c/module-01-challenge',
-        thumbnail: {horiseonthumbnail},
+        thumbnail: 'https://raw.githubusercontent.com/nataniel-c/react-portfolio/main/src/assets/images/horiseon-home-page.jpg',
         alttext: 'horiseon webpage',
         description: 'Simple interactive homepage showcasing CSS and homepage section navigation.'
     },
@@ -18,7 +13,7 @@ const projects = [
         name: 'Tech Blog',
         weblink: 'https://nataniel-c-tech-blog-e14d11d574ae.herokuapp.com/',
         githublink: 'https://github.com/nataniel-c/tech-blog',
-        thumbnail: {techblogthumbnail},
+        thumbnail: 'https://github.com/nataniel-c/react-portfolio/blob/main/src/assets/images/techblog.jpg?raw=true',
         alttext: 'techblog',
         description: 'CMS-style blog site similar to a Wordpress site, where users can publish their blog posts and comment on other users’ posts as well. Users can create an account and login using their credentials.'
     },
@@ -27,7 +22,7 @@ const projects = [
         name: 'Vibeify',
         weblink: 'https://nataniel-c.github.io/vibeify/',
         githublink: 'https://github.com/nataniel-c/vibeify',
-        thumbnail: {vibeifythumbnail},
+        thumbnail: 'https://github.com/nataniel-c/react-portfolio/blob/main/src/assets/images/vibeify.jpg?raw=true',
         alttext: 'vibeify',
         description: 'Upload an image using a weblink and get a song from Spotify that matches the "vibe" of the image.'
     },
@@ -36,7 +31,7 @@ const projects = [
         name: 'DnD Builder',
         weblink: 'https://dnd-builder-8e53886511db.herokuapp.com/',
         githublink: 'https://github.com/InternetEthan/dnd-builder',
-        thumbnail: {dndbuilderthumbnail},
+        thumbnail: 'https://github.com/nataniel-c/react-portfolio/blob/main/src/assets/images/dnd-builder.jpg?raw=true',
         alttext: 'dnd builder',
         description: 'Interactive DnD character creator with user database.'
     }
