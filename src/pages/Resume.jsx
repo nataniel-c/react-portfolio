@@ -15,18 +15,19 @@ function Resume() {
   return (
     <div>
       <h1>My Resume</h1>
-      <div>
+      <div className='info-card'>
         <button 
           id='downloadButton' 
           onClick={handleDownload}
           value='download'
+          className='submit-button'
         >
         Download Resume Pdf
         </button>
-      </div>
+      
       <h1>Skills and Proficiencies</h1>
-      <h3>Web development and coding:</h3>
       <ul>
+      <h3>Web development and coding:</h3>
         <li>HTML, JavaScript and CSS</li>
         <li>MongoDB, Express, React, and Node (MERN) stack</li>
         <li>GraphQL</li>
@@ -34,13 +35,14 @@ function Resume() {
         <li>.NET framework</li>
         <li>C# and C++</li>
       </ul>
-      <h3>Engineering simulation and CAD software:</h3>
       <ul>
+      <h3>Engineering simulation and CAD software:</h3>
         <li>MATLAB</li>
         <li>LabView</li>
         <li>AutoDesk AutoCAD, Inventor, and Revit</li>
         <li>SolidWorks</li>
       </ul>
+      </div>
     </div>
   );
 }

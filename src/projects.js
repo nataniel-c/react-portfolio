@@ -6,7 +6,7 @@ const projects = [
         githublink: 'https://github.com/nataniel-c/module-01-challenge',
         thumbnail: './src/assets/images/horiseon-home-page.png',
         alttext: 'horiseon webpage',
-        description: 'Simple interactive homepage'
+        description: 'Simple interactive homepage showcasing CSS and homepage section navigation.'
     },
     {
         id: 2,
@@ -15,8 +15,7 @@ const projects = [
         githublink: 'https://github.com/nataniel-c/tech-blog',
         thumbnail: './src/assets/images/techblog.png',
         alttext: 'techblog',
-        description: 'CMS-style blog site similar to a Wordpress site, where users can publish their blog posts and comment on other users’ posts as well. Users can create an account and login using their credentials. Data is stored in a datbase using mysql.'
-    
+        description: 'CMS-style blog site similar to a Wordpress site, where users can publish their blog posts and comment on other users’ posts as well. Users can create an account and login using their credentials.'
     },
     {
         id: 3,
@@ -25,7 +24,7 @@ const projects = [
         githublink: 'https://github.com/nataniel-c/vibeify',
         thumbnail: './src/assets/images/vibeify.png',
         alttext: 'vibeify',
-        description: 'Upload an image using a weblink and get a song from Spotify that matches the "vibe" of the image'
+        description: 'Upload an image using a weblink and get a song from Spotify that matches the "vibe" of the image.'
     },
     {
         id: 4,
@@ -34,7 +33,7 @@ const projects = [
         githublink: 'https://github.com/InternetEthan/dnd-builder',
         thumbnail: './src/assets/images/dnd-builder.png',
         alttext: 'dnd builder',
-        description: 'Interactive DnD character creator with user database'
+        description: 'Interactive DnD character creator with user database.'
     }
 ];
 

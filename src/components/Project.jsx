@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import CardActionArea from '@mui/material/CardActionArea';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -14,31 +15,32 @@ function Project({ projects }) {
       {projects.map((project) => (
       <Card sx={{ 
           margin: 2,
-          maxHeight: 500, 
-          alignItems: 'stretch', 
-          width: 350, 
-          display: 'flex', 
-          flexWrap: 'wrap',
-          justifyContent: 'start', 
+          height: 600, 
+          justifyContent: 'start',
+          alignItems: 'center', 
+          width: 500, 
+          display: 'flex',
+          flexWrap: 'no-wrap',  
           flexDirection: 'column',
-          }} className="cardbg">
-        <CardMedia
-          sx={{ height: 200 }}
-          image={project.thumbnail}
-          title={project.alttext}
-        />
-        <CardContent sx={{ justifyContent: 'start', alignItems: 'stretch' }} className="cardbg">
-          <Typography gutterBottom variant="h4" component="div" color='InfoText'>
-            {`${project.name}`}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {`${project.description}`}
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifySelf: 'center' }} className="cardbg">
+          }} className='project-card'>
+          <a href={project.weblink}><CardMedia
+            sx={{ width: 500, minHeight: 300, objectFit: 'cover'}}
+            image={project.thumbnail}
+            title={project.alttext}
+            className='project-thumbnail'
+          /></a>
+          <CardContent sx={{ height: 200, alignSelf: 'stretch' }} className="cardbg">
+            <Typography gutterBottom variant="h4" component="div">
+              <a href={project.weblink}><h3>{`${project.name}`}</h3></a>
+            </Typography>
+            <Typography variant="body1">
+              <h1 className='body-text'>{`${project.description}`}</h1>
+            </Typography>
+          </CardContent>
+        <CardActions sx={{ alignSelf: 'stretch', height: 100 }} className="cardbg">
           <Button size="small">
-            <a href={project.githublink}>
-              <img className="logo" src="https://cdn.icon-icons.com/icons2/2550/PNG/512/link_icon_152591.png"></img>
+            <a href={project.weblink}>
+              <img className="logo" src="https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png"></img>
             </a>
           </Button>
           <Button size="small">

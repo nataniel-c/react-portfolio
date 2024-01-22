@@ -8,9 +8,9 @@ export default function About() {
         <div>
           <img className="avatar" src={pfp} alt="me"></img>
         </div>
-        <p>Hello there, but I digress. My name is Nataniel. 
+        <p className='about-me'>Hello there, but I digress. My name is Nataniel. 
           I am a graduate of the Texas A&M Mechanical Engineering program. 
-          I currently work in the semiconductor industry and I am looking 
+          I currently work in the semiconductor industry as a field service engineer and I am looking 
           to expand my repertoire of programming and coding skills.
           <br></br><br></br>
           Under the "Portfolio" page you will find some of the coding projects I have created

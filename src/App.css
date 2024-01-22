@@ -16,16 +16,22 @@ body {
   min-width: 500px;
 }
 
+h2 {
+  color: rgb(61, 0, 0);
+  margin-bottom: 2%;
+}
+
 h1 {
   margin: 32px 0;
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 h3 {
+  text-align: start;
   margin: auto;
-  color: rgb(66, 171, 231);
-  font-size: 20px;
+  color: var(--tab-click-color);
+  font-size: 25px;
 }
 
 .contact-form {
@@ -37,11 +43,12 @@ h3 {
 .contact-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px;
-  border: 2px solid #5d0cff;
+  border: 2px solid var(--tab-shadow-color);
+  background-color: var(--tab-hover-color);
   outline: none;
-  width: 320px;
-  background: transparent;
+  width: 500px;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .contact-input::placeholder {
@@ -61,25 +68,16 @@ h3 {
 
 .project-container {
   display: flex;
-  flex-shrink: 1;
+  flex-shrink: 2;
   flex-wrap: wrap;
   align-items: stretch;
   margin: 10px;
-  justify-content: space-evenly;
-  columns: 400px 3;
+  justify-content: center;
+  columns: 200px 2;
 }
-/* 
-.project {
-  display: flex;
-  align-items: stretch;
-  border-radius: 5px;
-  max-width: 150em;
-  max-height: 150em;
-  background-color: #237a94;
-} */
 
 .cardbg {
-  background-color: #920000;
+  background-color: var(--tab-bg-color);
 }
 
 .low {
@@ -142,8 +140,8 @@ h3 {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.card {
-  padding: 2em;
+.cardbg {
+  background-color: var(--tab-shadow-color);
 }
 
 .read-the-docs {
@@ -196,6 +194,11 @@ h3 {
 
 li {
   align-self: flex-start;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 20px;
+  justify-self: start;
+  font-family:'Courier New', Courier, monospace
 }
 
 .page {
@@ -217,27 +220,57 @@ p {
   font-size: 20px;
   text-align: justify;
   text-justify: inter-word;
+  margin: 10px 40px 10px 10px;
+}
+
+.body-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
   margin: 5%;
 }
 
-.body-font {
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.about {
+.about, .info-card {
   display: flex;
   justify-content: center;
-  padding: 10px 20px;
+  flex-wrap: wrap;
+  padding: 30px 30px;
   align-items: center;
   background: var(--tab-bg-color);
   border-radius: 20px;
   margin-bottom: 20px;
 }
 
+.info-card {
+  flex-direction: column;
+  align-content: center;
+  font-size: 20px;
+}
+
 .myname {
   font-family: 'OCR A Std';
 }
 
+.about-me {
+  max-width: 600px;
+}
 .avatar {
-  box-shadow: 10px 10px 10px var(--tab-shadow-color)
+  box-shadow: 10px 10px 10px var(--tab-shadow-color);
+  flex-shrink: 3;
+  margin-right: 50px;
+  }
+
+.project-card:hover {
+  box-shadow: 10px 10px 10px var(--tab-bg-color);
+}
+
+.submit-button {
+  margin-top: 10px;
+  background-color: var(--tab-shadow-color);
+}
+
+ul {
+  max-width: 600px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  align-items: start;
 }
