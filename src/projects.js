@@ -1,10 +1,15 @@
+import horiseonthumbnail from './assets/images/horiseon-home-page.png'
+import techblogthumbnail from './assets/images/techblog.png'
+import vibeifythumbnail from './assets/images/vibeify.png'
+import dndbuilderthumbnail from './assets/images/dnd-builder.png'
+
 const projects = [
     {
         id: 1,
         name: 'Horiseon Webpage',
         weblink: 'https://nataniel-c.github.io/module-01-challenge/',
         githublink: 'https://github.com/nataniel-c/module-01-challenge',
-        thumbnail: './src/assets/images/horiseon-home-page.png',
+        thumbnail: {horiseonthumbnail},
         alttext: 'horiseon webpage',
         description: 'Simple interactive homepage showcasing CSS and homepage section navigation.'
     },
@@ -13,7 +18,7 @@ const projects = [
         name: 'Tech Blog',
         weblink: 'https://nataniel-c-tech-blog-e14d11d574ae.herokuapp.com/',
         githublink: 'https://github.com/nataniel-c/tech-blog',
-        thumbnail: './src/assets/images/techblog.png',
+        thumbnail: {techblogthumbnail},
         alttext: 'techblog',
         description: 'CMS-style blog site similar to a Wordpress site, where users can publish their blog posts and comment on other users’ posts as well. Users can create an account and login using their credentials.'
     },
@@ -22,7 +27,7 @@ const projects = [
         name: 'Vibeify',
         weblink: 'https://nataniel-c.github.io/vibeify/',
         githublink: 'https://github.com/nataniel-c/vibeify',
-        thumbnail: './src/assets/images/vibeify.png',
+        thumbnail: {vibeifythumbnail},
         alttext: 'vibeify',
         description: 'Upload an image using a weblink and get a song from Spotify that matches the "vibe" of the image.'
     },
@@ -31,7 +36,7 @@ const projects = [
         name: 'DnD Builder',
         weblink: 'https://dnd-builder-8e53886511db.herokuapp.com/',
         githublink: 'https://github.com/InternetEthan/dnd-builder',
-        thumbnail: './src/assets/images/dnd-builder.png',
+        thumbnail: {dndbuilderthumbnail},
         alttext: 'dnd builder',
         description: 'Interactive DnD character creator with user database.'
     }
