@@ -5,7 +5,7 @@ This is the code I used to create a Single-Page Application (SPA) portfolio usin
 
 ## Website Link:
 
-https://nataniel-c.github.io/professional-portfolio
+https://nataniel-c-portfolio.netlify.app/
 
 ## Website Screenshots:
 
