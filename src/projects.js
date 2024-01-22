@@ -1,7 +1,7 @@
-import horiseonthumbnail from './assets/images/horiseon-home-page.png'
-import techblogthumbnail from './assets/images/techblog.png'
-import vibeifythumbnail from './assets/images/vibeify.png'
-import dndbuilderthumbnail from './assets/images/dnd-builder.png'
+import horiseonthumbnail from './assets/images/horiseon-home-page.jpg'
+import techblogthumbnail from './assets/images/techblog.jpg'
+import vibeifythumbnail from './assets/images/vibeify.jpg'
+import dndbuilderthumbnail from './assets/images/dnd-builder.jpg'
 
 const projects = [
     {
