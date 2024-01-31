@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 
 
 function Project({ projects }) {
+  console.log(projects);
   return (
     <div className="project-container">
       {/* Here we use the map method to iterate through each user and return a new array of list items for each user */}
